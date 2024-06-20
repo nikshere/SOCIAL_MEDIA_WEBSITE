@@ -14,6 +14,7 @@ import { useRouter } from "next/router";
 import ChatButton from "../../components/ChatButton";
 const Avatar = dynamic(() => import("antd/lib/avatar"));
 const Modal = dynamic(() => import("antd/lib/modal"), { ssr: false });
+import Comment from "../../components/showComments";
 import CommentForm from "../../components/forms/ComentForm"
 
 const socket = io(process.env.NEXT_PUBLIC_SOCKETIO, {
